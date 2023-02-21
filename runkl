@@ -1,0 +1,15 @@
+#!/bin/bash
+
+rm -rf install
+
+tar -xvf install.tar
+
+mv build-install-basic-co install
+
+cd install
+
+export LD_LIBRARY_PATH="$(pwd)"
+
+export QT_PLUGIN_PATH="$(pwd)/plugins"
+
+./klayout
