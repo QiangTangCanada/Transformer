@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+
+cd install
+
+export LD_LIBRARY_PATH="$(pwd)"
+
+export QT_PLUGIN_PATH="$(pwd)/plugins"
+
+./klayout
